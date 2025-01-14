@@ -1,1 +1,17 @@
 This is the information file where we kept raw things.
+
+
+Steps:-
+
+> Create a Database "pos_system"  in Mysql using php admin link on browser.
+> Paste this Query for Product page:
+
+Query:
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    quantity INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
